@@ -13,7 +13,7 @@ app = FastAPI(title="RipPack API", description="MVP Backend for RipPack Game")
 # Setup CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000", "https://tgc-frontend-three.vercel.app", "https://tgc-frontend-git-main-tizianoguidonis-projects.vercel.app"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
