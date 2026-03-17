@@ -26,6 +26,7 @@ def seed_db():
     print("Database seeding started...")
     Base.metadata.create_all(bind=engine)
     db: Session = SessionLocal()
+    db.query(models.UserCard).delete()
     db.query(models.Card).delete()
     db.commit()
     for card_data in MEME_CARDS:
