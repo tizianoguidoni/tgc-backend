@@ -22,6 +22,10 @@ class Card(Base):
     name = Column(String, unique=True, index=True)
     rarity = Column(String, index=True) # Common, Rare, Epic, Legendary
     image_url = Column(String)
+    flavor = Column(String, default="")
+    power = Column(Integer, default=0)
+    sigma = Column(Integer, default=0)
+    based = Column(Integer, default=0)
 
 class UserCard(Base):
     __tablename__ = "user_cards"

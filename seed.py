@@ -34,9 +34,11 @@ def seed_db():
     
     # Check if cards exist
     existing_cards = db.query(models.Card).count()
-    if existing_cards == 0:
+    db.query(models.Card).delete()
+db.commit()
+if True:
         for card_data in MEME_CARDS:
-            card = models.Card(**card_data)
+            card = models.Card(name=card_data["name"], rarity=card_data["rarity"], image_url=card_data["image_url"], flavor=card_data.get("flavor",""), power=card_data.get("power",0), sigma=card_data.get("sigma",0), based=card_data.get("based",0))
             db.add(card)
         db.commit()
         print(f"Successfully seeded {len(MEME_CARDS)} meme cards.")

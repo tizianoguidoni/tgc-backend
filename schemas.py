@@ -26,6 +26,10 @@ class CardResponse(BaseModel):
     name: str
     rarity: str
     image_url: str
+    flavor: str = ""
+    power: int = 0
+    sigma: int = 0
+    based: int = 0
 
     class Config:
         from_attributes = True
