@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from database import engine, Base
 import models
-from routes import auth, packs, shop
+from routes import auth, packs, shop, battle
 import uvicorn
 
 # Create Database Tables
@@ -23,6 +23,7 @@ app.add_middleware(
 app.include_router(auth.router)
 app.include_router(packs.router)
 app.include_router(shop.router)
+app.include_router(battle.router)
 
 @app.get("/")
 def read_root():

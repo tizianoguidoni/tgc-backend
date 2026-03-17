@@ -37,3 +37,15 @@ class UserCard(Base):
 
     user = relationship("User", back_populates="cards")
     card = relationship("Card")
+
+class Battle(Base):
+    __tablename__ = "battles"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    player_cards = Column(String)
+    bot_cards = Column(String)
+    current_round = Column(Integer, default=0)
+    player_score = Column(Integer, default=0)
+    bot_score = Column(Integer, default=0)
+    status = Column(String, default="active")
+    created_at = Column(DateTime, default=datetime.utcnow)
