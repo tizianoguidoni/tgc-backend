@@ -5,7 +5,7 @@ import models
 MEME_CARDS = [
     {"name": "Pepe the Frog", "rarity": "Common", "image_url": "https://upload.wikimedia.org/wikipedia/en/a/a7/Pepe_the_frog_by_Matt_Furie.jpg", "flavor": "Feels good man.", "power": 12, "sigma": 44, "based": 67},
     {"name": "Wojak", "rarity": "Common", "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Sad_Wojak.jpg/220px-Sad_Wojak.jpg", "flavor": "I just feel so...", "power": 8, "sigma": 22, "based": 41},
-    {"name": "Troll Face", "rarity": "Common", "image_url": "https://upload.wikimedia.org/wikipedia/en/9/9a/Trollface_non-free.png", "flavor": "Problem?", "power": 15, "sigma": 55, "based": 30},
+    {"name": "Troll Face", "rarity": "Common", "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Trollface_non-free.png/220px-Trollface_non-free.png", "flavor": "Problem?", "power": 15, "sigma": 55, "based": 30},
     {"name": "Is This a Pigeon?", "rarity": "Common", "image_url": "https://i.imgflip.com/1o00in.jpg", "flavor": "Is this a rare card?", "power": 9, "sigma": 18, "based": 52},
     {"name": "Success Kid", "rarity": "Common", "image_url": "https://i.imgflip.com/1bhk.jpg", "flavor": "Nailed it.", "power": 18, "sigma": 61, "based": 78},
     {"name": "Hide the Pain Harold", "rarity": "Common", "image_url": "https://i.imgflip.com/gk5el.jpg", "flavor": "Everything is fine.", "power": 11, "sigma": 33, "based": 59},
@@ -16,10 +16,10 @@ MEME_CARDS = [
     {"name": "Doge", "rarity": "Rare", "image_url": "https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg", "flavor": "Much wow. Very rare.", "power": 44, "sigma": 77, "based": 88},
     {"name": "Stonks Man", "rarity": "Rare", "image_url": "https://i.imgflip.com/3si4b6.jpg", "flavor": "Line go up. Always.", "power": 51, "sigma": 69, "based": 82},
     {"name": "Disaster Girl", "rarity": "Rare", "image_url": "https://i.imgflip.com/23ls.jpg", "flavor": "She planned this.", "power": 48, "sigma": 83, "based": 91},
-    {"name": "Nyan Cat", "rarity": "Rare", "image_url": "https://upload.wikimedia.org/wikipedia/en/f/fd/Nyan_cat_250px_frame.PNG", "flavor": "nyan nyan nyan nyan", "power": 39, "sigma": 72, "based": 84},
-    {"name": "Cyber Doge", "rarity": "Epic", "image_url": "https://i.imgflip.com/4t0m5.jpg", "flavor": "Such future. Very cyber. Wow.", "power": 78, "sigma": 91, "based": 95},
-    {"name": "Gigachad", "rarity": "Epic", "image_url": "https://i.imgflip.com/5cilum.jpg", "flavor": "Power: 9000 | Sigma: MAX | Weakness: feelings", "power": 95, "sigma": 99, "based": 100},
-    {"name": "Illuminati Triangle", "rarity": "Legendary", "image_url": "https://i.imgflip.com/1e7ql7.jpg", "flavor": "They knew you would pull this.", "power": 999, "sigma": 999, "based": 999},
+    {"name": "Nyan Cat", "rarity": "Rare", "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Nyan_cat_250px_frame.PNG/220px-Nyan_cat_250px_frame.PNG", "flavor": "nyan nyan nyan nyan", "power": 39, "sigma": 72, "based": 84},
+    {"name": "Cyber Doge", "rarity": "Epic", "image_url": "https://upload.wikimedia.org/wikipedia/en/5/5f/Original_Doge_meme.jpg", "flavor": "Such future. Very cyber. Wow.", "power": 78, "sigma": 91, "based": 95},
+    {"name": "Gigachad", "rarity": "Epic", "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chad_Thundercock.jpg/220px-Chad_Thundercock.jpg", "flavor": "Power: 9000 | Sigma: MAX | Weakness: feelings", "power": 95, "sigma": 99, "based": 100},
+    {"name": "Illuminati Triangle", "rarity": "Legendary", "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Illuminati_triangle_eye.png/220px-Illuminati_triangle_eye.png", "flavor": "They knew you would pull this.", "power": 999, "sigma": 999, "based": 999},
 ]
 
 def seed_db():
