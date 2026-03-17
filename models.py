@@ -12,6 +12,8 @@ class User(Base):
     packs = Column(Integer, default=1)  # 1 free pack on signup
     streak = Column(Integer, default=0)
     last_login = Column(DateTime, default=datetime.utcnow)
+    battle_level = Column(Integer, default=1)
+    battle_wins_streak = Column(Integer, default=0)
     
     cards = relationship("UserCard", back_populates="user")
 
